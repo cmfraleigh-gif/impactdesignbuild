@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /cdn-cgi/
+
+# Block AI scrapers from using content for training
+User-agent: GPTBot
+Disallow: /
+User-agent: ChatGPT-User
+Disallow: /
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://www.impactdesignbuild.net/sitemap.xml
