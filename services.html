@@ -49,18 +49,6 @@ nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(14,28
 .service-detail-list li::before { content:''; width:8px; height:8px; background:var(--gold); flex-shrink:0; }
 
 /* CTA BAND */
-.cta-band { background:var(--navy); padding:80px; display:flex; align-items:center; justify-content:space-between; gap:40px; }
-.cta-band-text h2 { font-family:'Bebas Neue',sans-serif; font-size:clamp(36px,4vw,56px); color:#fff; letter-spacing:2px; line-height:1; }
-.cta-band-text p { font-size:17px; color:rgba(255,255,255,0.6); margin-top:12px; }
-.btn-gold { display:inline-flex; align-items:center; gap:10px; background:var(--gold); color:var(--dark); font-family:'Barlow Condensed',sans-serif; font-size:15px; font-weight:700; letter-spacing:2px; text-transform:uppercase; padding:18px 44px; text-decoration:none; transition:background 0.2s,transform 0.2s; white-space:nowrap; }
-.btn-gold:hover { background:#e0aa30; transform:translateY(-2px); }
-
-footer { background:rgba(14,28,47,0.97); display:flex; align-items:stretch; justify-content:space-between; height:90px; border-top:2px solid var(--gold); padding:0 48px 0 0; position:relative; }
-.footer-logo { background:transparent; padding:0 60px 0 32px; display:flex; align-items:center; justify-content:center; height:90px; text-decoration:none; }
-.footer-logo img { height:70px; width:auto; display:block; object-fit:contain; transform:translateY(-4px); }
-.footer-right { display:flex; flex-direction:column; align-items:flex-end; justify-content:center; gap:8px; padding-right:64px; }
-.footer-copy { font-family:'Barlow Condensed',sans-serif; font-size:14px; letter-spacing:1px; color:rgba(255,255,255,0.5); }
-.footer-license { font-family:'Barlow Condensed',sans-serif; font-size:16px; letter-spacing:2px; color:var(--gold); text-transform:uppercase; }
 #back-to-top-btn { position:fixed; bottom:36px; right:36px; width:48px; height:48px; background:var(--gold); color:var(--dark); border:none; font-size:26px; cursor:pointer; opacity:0; visibility:hidden; transition:opacity 0.3s,visibility 0.3s; z-index:999; display:flex; align-items:center; justify-content:center; }
 #back-to-top-btn.visible { opacity:1; visibility:visible; }
 .hamburger { display:none; flex-direction:column; justify-content:center; gap:5px; background:none; border:none; cursor:pointer; padding:8px; z-index:101; }
@@ -81,11 +69,27 @@ footer { background:rgba(14,28,47,0.97); display:flex; align-items:stretch; just
   .page-hero { padding:120px 24px 60px; }
   .service-detail { grid-template-columns:1fr; gap:40px; padding:64px 24px; }
   .service-detail:nth-child(even) .service-detail-img { order:-1; }
-  .cta-band { flex-direction:column; padding:48px 24px; text-align:center; }
-  footer { height:auto; flex-direction:column; padding:24px; gap:16px; }
-  .footer-logo { height:auto; padding:16px; justify-content:center; }
-  .footer-right { align-items:center; padding:16px 0; padding-right:0; }
 }
+
+  /* UNIFIED FOOTER */
+  .unified-footer { background: var(--dark); border-top: 3px solid var(--gold); padding: 80px 80px 40px; }
+  .footer-cta-row { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-bottom: 60px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+  .footer-cta-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(36px,4vw,56px); color: #fff; letter-spacing: 2px; line-height: 1; }
+  .footer-cta-text p { font-size: 17px; color: rgba(255,255,255,0.55); margin-top: 12px; }
+  .btn-gold { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--dark); font-family: 'Barlow Condensed', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 18px 44px; text-decoration: none; transition: background 0.2s, transform 0.2s; white-space: nowrap; }
+  .btn-gold:hover { background: #e0aa30; transform: translateY(-2px); }
+  .footer-bottom-row { display: flex; align-items: center; justify-content: space-between; padding-top: 40px; }
+  .footer-logo { text-decoration: none; display: flex; align-items: center; }
+  .footer-logo img { height: 60px; width: auto; display: block; object-fit: contain; transform: translateY(-4px); }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .footer-copy { font-family: 'Barlow Condensed', sans-serif; font-size: 14px; letter-spacing: 1px; color: rgba(255,255,255,0.4); }
+  .footer-license { font-family: 'Barlow Condensed', sans-serif; font-size: 15px; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; }
+  @media (max-width: 900px) {
+    .unified-footer { padding: 48px 24px 32px; }
+    .footer-cta-row { flex-direction: column; text-align: center; gap: 24px; }
+    .footer-bottom-row { flex-direction: column; align-items: center; gap: 16px; text-align: center; }
+    .footer-right { align-items: center; }
+  }
 </style>
 </head>
 <body>
@@ -218,21 +222,26 @@ footer { background:rgba(14,28,47,0.97); display:flex; align-items:stretch; just
   <img class="service-detail-img" src="images/flagler_self_storage.png" alt="Self storage construction Jacksonville FL" loading="lazy">
 </div>
 
-<div class="cta-band">
-  <div class="cta-band-text">
-    <h2>Let's Discuss Your Project</h2>
-    <p>Licensed CGC 057251 · Serving Northeast Florida · 904-947-9000</p>
-  </div>
   <a href="contact.html" class="btn-gold">Get A Consultation</a>
 </div>
 
-<footer>
-  <a class="footer-logo" href="index.html">
-    <img src="images/logo.svg" alt="Impact Design Build LLC" loading="lazy">
-  </a>
-  <div class="footer-right">
-    <div class="footer-copy">© 2025 Impact Design Build LLC. All rights reserved.</div>
-    <div class="footer-license">CGC 057251 &nbsp;|&nbsp; Jacksonville, FL</div>
+
+<footer class="unified-footer">
+  <div class="footer-cta-row">
+    <div class="footer-cta-text">
+      <h2>Let's Discuss Your Project</h2>
+      <p>Licensed CGC 057251 · Serving Northeast Florida · 904-947-9000</p>
+    </div>
+    <a href="contact.html" class="btn-gold">Get A Consultation</a>
+  </div>
+  <div class="footer-bottom-row">
+    <a class="footer-logo" href="index.html">
+      <img src="images/logo.svg" alt="Impact Design Build LLC" loading="lazy">
+    </a>
+    <div class="footer-right">
+      <div class="footer-copy">© 2025 Impact Design Build LLC. All rights reserved.</div>
+      <div class="footer-license">CGC 057251 &nbsp;|&nbsp; Jacksonville, FL</div>
+    </div>
   </div>
 </footer>
 
