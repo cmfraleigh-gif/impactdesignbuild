@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Impact Design Build | Commercial General Contractor Jacksonville FL</title>
+<meta name="description" content="Learn about Impact Design Build LLC — Jacksonville's trusted commercial general contractor. Led by Jim Terrell, Registered Architect and CGC with 40+ years experience. Licensed CGC 057251.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.impactdesignbuild.net/about.html">
+<link rel="icon" type="image/svg+xml" href="images/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root { --navy:#1a2d4a; --blue:#2457a0; --gold:#c8971f; --light:#f4f6f9; --gray:#6b7a8d; --white:#ffffff; --dark:#0e1c2f; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { font-family:'Barlow',sans-serif; background:var(--white); color:var(--navy); overflow-x:hidden; }
+nav { position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(14,28,47,0.97); backdrop-filter:blur(8px); display:flex; align-items:stretch; justify-content:space-between; padding:0 48px 0 0; height:90px; border-bottom:2px solid var(--gold); }
+.nav-logo { cursor:pointer; background:transparent; padding:0 60px 0 32px; display:flex; align-items:center; justify-content:center; height:100%; align-self:stretch; margin-bottom:6px; text-decoration:none; }
+.nav-logo img { height:70px; width:auto; display:block; object-fit:contain; transform:translateY(-4px); }
+.nav-links { display:flex; align-items:center; gap:32px; list-style:none; }
+.nav-links a { font-family:'Barlow Condensed',sans-serif; font-size:20px; font-weight:600; letter-spacing:2px; text-transform:uppercase; color:#ffffff; text-decoration:none; transition:color 0.2s; }
+.nav-links a:hover, .nav-links a.active { color:var(--gold); }
+.nav-cta { background:var(--gold) !important; color:var(--dark) !important; padding:8px 20px; font-weight:700 !important; }
+.nav-cta:hover { background:#e0aa30 !important; }
+.section-tag { font-family:'Barlow Condensed',sans-serif; font-size:20px; letter-spacing:4px; text-transform:uppercase; color:var(--gold); margin-bottom:12px; display:block; }
+.section-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(40px,5vw,64px); letter-spacing:1px; color:var(--navy); line-height:1; margin-bottom:24px; }
+
+/* PAGE HERO */
+.page-hero { background:var(--dark); padding:160px 80px 80px; position:relative; overflow:hidden; }
+.page-hero-bg { position:absolute; inset:0; }
+.page-hero-bg img { width:100%; height:100%; object-fit:cover; opacity:0.3; }
+.page-hero::after { content:''; position:absolute; inset:0; background:linear-gradient(to right,rgba(10,20,38,0.9) 0%,rgba(10,20,38,0.5) 100%); }
+.page-hero-content { position:relative; z-index:2; }
+.page-hero-tag { font-family:'Barlow Condensed',sans-serif; font-size:20px; letter-spacing:5px; text-transform:uppercase; color:var(--gold); margin-bottom:16px; display:block; }
+.page-hero-title { font-family:'Bebas Neue',sans-serif; font-size:clamp(48px,7vw,96px); line-height:0.92; color:var(--white); letter-spacing:2px; }
+.page-hero-divider { width:60px; height:3px; background:var(--gold); margin:24px 0; }
+.page-hero-desc { font-size:18px; font-weight:300; line-height:1.7; color:#c0cfe0; max-width:600px; }
+
+/* ABOUT SECTION */
+.about-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:center; padding:100px 80px; background:var(--light); }
+.about-image-block { position:relative; }
+.about-img { width:100%; aspect-ratio:4/3; object-fit:cover; display:block; }
+.about-badge { position:absolute; bottom:-24px; right:-24px; background:var(--navy); color:var(--white); padding:24px 28px; text-align:center; }
+.about-badge .num { font-family:'Bebas Neue',sans-serif; font-size:48px; color:var(--gold); line-height:1; display:block; }
+.about-badge .lbl { font-family:'Barlow Condensed',sans-serif; font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#aab8cb; }
+.about-text p { font-size:17px; font-weight:300; line-height:1.8; color:#3a4a5e; margin-bottom:20px; }
+.about-detail { display:flex; gap:12px; align-items:flex-start; margin-top:8px; }
+.about-detail-icon { width:20px; height:20px; background:var(--gold); flex-shrink:0; margin-top:3px; display:flex; align-items:center; justify-content:center; }
+.about-detail-icon svg { width:12px; height:12px; fill:var(--dark); }
+.about-detail p { margin:0; font-size:15px; }
+.license-badge { display:inline-block; background:var(--navy); color:var(--gold); font-family:'Barlow Condensed',sans-serif; font-size:13px; letter-spacing:2px; text-transform:uppercase; padding:8px 16px; margin-top:24px; }
+
+/* PRINCIPAL SECTION */
+.principal-grid { display:grid; grid-template-columns:1fr 1fr; gap:80px; align-items:start; padding:100px 80px; background:#ffffff; }
+.principal-grid .about-text p { font-size:17px; font-weight:300; line-height:1.8; color:#3a4a5e; margin-bottom:20px; }
+
+/* VALUES */
+.values-section { background:var(--dark); padding:100px 80px; }
+.values-section .section-tag { color:var(--gold); }
+.values-section .section-title { color:#fff; }
+.values-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2px; margin-top:48px; }
+.value-card { background:rgba(255,255,255,0.04); padding:48px 40px; border-left:3px solid var(--gold); transition:background 0.3s; }
+.value-card:hover { background:rgba(255,255,255,0.08); }
+.value-icon { font-family:'Bebas Neue',sans-serif; font-size:64px; color:rgba(200,151,31,0.25); letter-spacing:2px; line-height:1; margin-bottom:20px; }
+.value-title { font-family:'Bebas Neue',sans-serif; font-size:28px; color:#fff; letter-spacing:2px; margin-bottom:14px; }
+.value-desc { font-size:15px; color:rgba(255,255,255,0.55); line-height:1.8; }
+
+/* CTA BAND */
+
+/* FOOTER */
+#back-to-top-btn { position:fixed; bottom:36px; right:36px; width:48px; height:48px; background:var(--gold); color:var(--dark); border:none; font-size:26px; cursor:pointer; opacity:0; visibility:hidden; transition:opacity 0.3s,visibility 0.3s; z-index:999; display:flex; align-items:center; justify-content:center; }
+#back-to-top-btn.visible { opacity:1; visibility:visible; }
+.hamburger { display:none; flex-direction:column; justify-content:center; gap:5px; background:none; border:none; cursor:pointer; padding:8px; z-index:101; }
+.hamburger span { display:block; width:26px; height:2px; background:#fff; transition:all 0.3s ease; }
+.hamburger.open span:nth-child(1) { transform:translateY(7px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity:0; }
+.hamburger.open span:nth-child(3) { transform:translateY(-7px) rotate(-45deg); }
+@media (max-width:900px) {
+  nav { padding:0 20px; height:70px; }
+  .nav-logo { padding:0 12px 0 0; }
+  .nav-logo img { height:44px; }
+  .hamburger { display:flex; }
+  .nav-links { display:none; position:fixed; top:70px; left:0; right:0; background:rgba(14,28,47,0.98); flex-direction:column; align-items:center; gap:0; padding:16px 0 24px; z-index:100; border-bottom:2px solid var(--gold); }
+  .nav-links.open { display:flex; }
+  .nav-links li { width:100%; text-align:center; }
+  .nav-links a { display:block; padding:14px 24px; font-size:18px; border-bottom:1px solid rgba(255,255,255,0.07); }
+  .nav-cta { margin:12px 24px 0 !important; display:block !important; text-align:center; }
+  .page-hero { padding:120px 24px 60px; }
+  .about-grid,.principal-grid { grid-template-columns:1fr; gap:40px; padding:64px 24px; }
+  .about-badge { right:0; bottom:-16px; }
+  .values-section { padding:64px 24px; }
+  .values-grid { grid-template-columns:1fr; }
+}
+
+  /* UNIFIED FOOTER */
+  .unified-footer { background: var(--navy); border-top: 3px solid var(--gold); padding: 32px 80px 24px; margin-top: 0; }
+  .footer-cta-row { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .footer-cta-text h2 { font-family: 'Bebas Neue', sans-serif; font-size: clamp(24px,2.5vw,36px); color: #fff; letter-spacing: 2px; line-height: 1; }
+  .footer-cta-text p { font-size: 13px; color: rgba(255,255,255,0.45); margin-top: 6px; letter-spacing: 1px; }
+  .btn-gold { display: inline-flex; align-items: center; gap: 10px; background: var(--gold); color: var(--dark); font-family: 'Barlow Condensed', sans-serif; font-size: 13px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; padding: 12px 28px; text-decoration: none; transition: background 0.2s, transform 0.2s; white-space: nowrap; }
+  .btn-gold:hover { background: #e0aa30; transform: translateY(-2px); }
+  .footer-bottom-row { display: flex; align-items: center; justify-content: space-between; padding-top: 20px; padding-right: 100px; }
+  .footer-logo { text-decoration: none; display: flex; align-items: center; }
+  .footer-logo img { height: 44px; width: auto; display: block; object-fit: contain; transform: translateY(-4px); }
+  .footer-right { display: flex; flex-direction: column; align-items: flex-end; gap: 3px; }
+  .footer-copy { font-family: 'Barlow Condensed', sans-serif; font-size: 12px; letter-spacing: 1px; color: rgba(255,255,255,0.35); }
+  .footer-license { font-family: 'Barlow Condensed', sans-serif; font-size: 13px; letter-spacing: 2px; color: var(--gold); text-transform: uppercase; }
+  @media (max-width: 900px) {
+    .unified-footer { padding: 28px 24px 20px; }
+    .footer-cta-row { flex-direction: column; text-align: center; gap: 16px; }
+    .footer-bottom-row { flex-direction: column; align-items: center; gap: 12px; text-align: center; padding-right: 0; }
+    .footer-right { align-items: center; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">
+    <img src="images/logo.svg" alt="Impact Design Build LLC" loading="eager" fetchpriority="high">
+  </a>
+  <ul class="nav-links" id="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="services.html">Services</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html" class="nav-cta">Contact Us</a></li>
+  </ul>
+  <button class="hamburger" id="hamburger" onclick="toggleMobileMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <div class="page-hero-bg"><img src="images/about_photo.jpg" alt="Impact Design Build LLC Jacksonville FL commercial construction"></div>
+  <div class="page-hero-content">
+    <span class="page-hero-tag">Who We Are</span>
+    <h1 class="page-hero-title">About Impact<br>Design Build</h1>
+    <div class="page-hero-divider"></div>
+    <p class="page-hero-desc">Jacksonville's trusted commercial general contractor — led by a Registered Architect and Certified General Contractor with 40+ years of hands-on experience across Northeast Florida.</p>
+  </div>
+</div>
+
+<!-- PRINCIPAL -->
+<div class="principal-grid">
+  <div class="about-text">
+    <span class="section-tag">Meet Our Principal</span>
+    <h2 class="section-title">Jim Terrell — Registered Architect &amp; Certified General Contractor</h2>
+    <p>Jim Terrell brings over 33 years of hands-on experience in commercial construction to Impact Design Build LLC as its founding Senior Principal. His career began as co-founder of Infinity Design Builders in 1993, where he also co-owned Bruce Terrell Architects — giving him a rare dual perspective as both a licensed architect and a certified general contractor.</p>
+    <p>After Infinity Design Builders, Jim joined Ash Properties, a prominent local development company with an in-house ground-up construction team, where he served as Director of Construction for five years. During that period, Ash Construction completed numerous multi-level storage buildings, retail centers, and office buildings — with Jim playing an active leadership role from undeveloped land through completed structures.</p>
+    <p><em>Several of the projects represented by photographs on this website were completed during Jim's tenure at Ash Properties and Ash Construction.</em></p>
+    <p>In 2023, Jim founded Impact Design Build LLC — carrying forward decades of expertise, an unwavering commitment to quality, and a genuine passion for the construction industry.</p>
+    <div class="about-detail">
+      <div class="about-detail-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="#0e1c2f" stroke-width="2" fill="none"/></svg></div>
+      <p>Founding partner of Infinity Design Builders (1993) &amp; co-owner of Bruce Terrell Architects</p>
+    </div>
+    <div class="about-detail">
+      <div class="about-detail-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="#0e1c2f" stroke-width="2" fill="none"/></svg></div>
+      <p>Former Director of Construction at Ash Properties — ground-up commercial development</p>
+    </div>
+    <div class="about-detail">
+      <div class="about-detail-icon"><svg viewBox="0 0 12 12"><polyline points="2,6 5,9 10,3" stroke="#0e1c2f" stroke-width="2" fill="none"/></svg></div>
+      <p>Licensed Registered Architect and Certified General Contractor — CGC 057251</p>
+    </div>
+  </div>
+  <div class="about-image-block">
+    <img class="about-img" src="images/the_shed.png" alt="The Shed Garage Club — Impact Design Build LLC commercial construction Jacksonville FL" loading="lazy">
+  </div>
+</div>
+
+<!-- VALUES -->
+<div class="values-section">
+  <span class="section-tag">How We Work</span>
+  <h2 class="section-title">Our Core Values</h2>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">01</div>
+      <div class="value-title">Quality First</div>
+      <div class="value-desc">Every project is built to last. We use proven methods, quality materials, and experienced tradespeople to deliver work we're proud to put our name on.</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">02</div>
+      <div class="value-title">Client Partnership</div>
+      <div class="value-desc">We treat every client as a long-term partner. Clear communication, honest timelines, and no surprises — from the first consultation to final walkthrough.</div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">03</div>
+      <div class="value-title">On Time, On Budget</div>
+      <div class="value-desc">Our clients depend on us to deliver. We plan meticulously, manage proactively, and hold ourselves accountable to every schedule and budget commitment.</div>
+    </div>
+  </div>
+</div>
+
+
+<footer class="unified-footer">
+  <div class="footer-cta-row">
+    <div class="footer-cta-text">
+      <h2>Ready to Work With Us?</h2>
+      <p>Licensed CGC 057251 · Serving Northeast Florida · 904-947-9000</p>
+    </div>
+    <a href="contact.html" class="btn-gold">Get In Touch</a>
+  </div>
+  <div class="footer-bottom-row">
+    <a class="footer-logo" href="index.html">
+      <img src="images/logo.svg" alt="Impact Design Build LLC" loading="lazy">
+    </a>
+    <div class="footer-right">
+      <div class="footer-copy">© 2025 Impact Design Build LLC. All rights reserved.</div>
+      <div class="footer-license">CGC 057251 &nbsp;|&nbsp; Jacksonville, FL</div>
+    </div>
+  </div>
+</footer>
+
+<button id="back-to-top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">⇧</button>
+
+<script>
+  function toggleMobileMenu() {
+    document.getElementById('nav-links').classList.toggle('open');
+    document.getElementById('hamburger').classList.toggle('open');
+  }
+  window.addEventListener('scroll', () => {
+    document.getElementById('back-to-top-btn').classList.toggle('visible', window.scrollY > 400);
+  });
+</script>
+</body>
+</html>
