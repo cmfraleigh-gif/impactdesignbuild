@@ -1,0 +1,5 @@
+# Redirect Netlify subdomain to custom domain
+https://impactdesignbuildnet.netlify.app/* https://impactdesignbuild.net/:splat 301!
+
+# Force non-www
+https://www.impactdesignbuild.net/* https://impactdesignbuild.net/:splat 301!
